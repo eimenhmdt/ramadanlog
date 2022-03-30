@@ -38,7 +38,7 @@ ReactDOM.render(
 
   <AuthProvider>
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/ramadanlog">
       <App/>
     </BrowserRouter>
   </React.StrictMode>
