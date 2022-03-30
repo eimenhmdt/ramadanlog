@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ramadanlog/static/css/main.9e06cd67.css",
+    "main.js": "/ramadanlog/static/js/main.ec59c0d2.js",
+    "index.html": "/ramadanlog/index.html",
+    "main.9e06cd67.css.map": "/ramadanlog/static/css/main.9e06cd67.css.map",
+    "main.ec59c0d2.js.map": "/ramadanlog/static/js/main.ec59c0d2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e06cd67.css",
+    "static/js/main.ec59c0d2.js"
+  ]
+}
