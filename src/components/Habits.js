@@ -4,6 +4,7 @@ import { Link as RouterLink } from 'react-router-dom';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
@@ -15,6 +16,7 @@ import { useHabits } from '../hooks';
 import { Auth } from "../context/AuthContext";
 import HowToRegIcon from '@mui/icons-material/HowToReg';
 import CardActionArea from '@mui/material/CardActionArea';
+
 
 
 
@@ -38,17 +40,7 @@ export const Habits = () => {
     };
     
 
-    function Counter() {
-        const [count, setCount] = React.useState(0)
-        const increment = () => setCount(c => c + 1)
-        return (
-        <div className="votebox">
-            <button className="votebutton" onClick={increment}>  <HowToRegIcon/>  </button>
-            <div> Successful Completions: {count} </div>
-        </div>
-        )
     
-      }
 
 
 
@@ -63,7 +55,7 @@ export const Habits = () => {
    
 
         <Box ml={50} mt={10}>
-        <h2> My Goals for Ramadan</h2>
+        <h2> <strong>My Ramadan Goals</strong></h2>
         
 
         
@@ -76,9 +68,10 @@ export const Habits = () => {
             <Grid item xs={4}>
                 
                 
-            <Card key={habits.id} sx={{
+            <Card variant="outlined" key={habits.id} sx={{
     // some styles
     maxWidth: 600,
+    Width: 400,
     height: 250,
     boxShadow: 3,
     borderRadius: 5,
@@ -93,6 +86,13 @@ export const Habits = () => {
     },
   }}
  >
+      <CardMedia
+        component="img"
+        height="60"
+        image= "https://source.unsplash.com/gS3f7-tFe18"
+        alt="tiles"
+      />
+    
    
                 <CardHeader
                 className={"MuiCardHeader-root"}
@@ -105,13 +105,13 @@ export const Habits = () => {
                 />
                  
                 
-                <CardContent className={"MuiCardContent-root"}>
+                <CardContent sx={{overflow: 'hidden',}}className={"MuiCardContent-root"}>
                 <Grid container spacing={2}>
                     <Grid item xs={12} >
 
                     <Grid container>
                     <Grid container justify="space-evenly">
-                        <Typography variant="h6"> {habit.habit} </Typography>
+                        <Typography noWrap gutterBottom variant="h6"> {habit.habit} </Typography>
                         </Grid>
                         
                         
@@ -123,7 +123,7 @@ export const Habits = () => {
                 </Grid>
                 <Grid item xs={14}> 
                     <CardActions>
-                            <Button position="absolute"  color="success" fullWidth  variant="outlined" component={RouterLink} to={`/${habit.id}`} >Open Journal</Button>
+                            <Button sx={{overflow: 'hidden'}}  color="success" fullWidth  variant="outlined" component={RouterLink} to={`/${habit.id}`} >Open Journal</Button>
                     </CardActions>
 
                 </Grid>

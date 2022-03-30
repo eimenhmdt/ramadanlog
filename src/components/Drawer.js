@@ -26,6 +26,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import { firebase } from '../firebase';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
+import StickyNote2Icon from '@mui/icons-material/StickyNote2';
 
 
 
@@ -120,7 +121,7 @@ export default function PermanentDrawerLeft() {
                 <TextField sx={{mt:4}}
                   margin="dense"
                   id="intention"
-                  label="What is your intention for this goal?"
+                  label="What is your intention (Niyyah) for this goal?"
                   type="habit"
                   color="success"
                   fullWidth
@@ -152,12 +153,12 @@ export default function PermanentDrawerLeft() {
           variant="permanent"
           anchor="left"
         >
-          <Toolbar style={{ height: '40px' }}> </Toolbar>
-          <Divider />
+          <Toolbar style={{ height: '40px' }}> <Typography variant="h6"> <strong>RAMADAN.LOG </strong></Typography> <StickyNote2Icon/> </Toolbar>
+          {/* <Divider /> */}
           <List>
             <ListItem button component={Link} to="/dashboard">
                 <ListItemIcon>
-                  <FormatListBulletedIcon style={{fill: "#ffea00"}}/>
+                  <FormatListBulletedIcon style={{fill: "#ffffff"}}/>
                 </ListItemIcon>
                 <ListItemText primary= "Goal List" />
               </ListItem>
@@ -166,7 +167,7 @@ export default function PermanentDrawerLeft() {
             <ListItem button onClick={handleClickOpen}
                 >
                 <ListItemIcon>
-                  <AddCircleOutlineIcon style={{fill: "#ffea00"}}/>
+                  <AddCircleOutlineIcon style={{fill: "#ffffff"}}/>
                 </ListItemIcon>
                 <ListItemText primary= "Add New Goal" />
               </ListItem>
@@ -174,7 +175,7 @@ export default function PermanentDrawerLeft() {
           <List>
             <ListItem button onClick={handleLogout}>
                 <ListItemIcon>
-                  <LogoutIcon style={{fill: "#ffea00"}} />
+                  <LogoutIcon style={{fill: "#ffffff"}} />
                 </ListItemIcon>
                 <ListItemText primary= "Sign Out" />
               </ListItem>

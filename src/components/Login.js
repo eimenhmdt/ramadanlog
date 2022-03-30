@@ -109,7 +109,7 @@ export default function Login() {
 <Typography sx={{ m: 5}}  variant="h5">
 <Typewriter
   options={{
-    strings: ['Ramadan Mubarak! 🎉', 'تقبل الله منا ومنكم '],
+    strings: ['Ramadan Mubarak! 🎉', 'Keep me in your Duas 🤲 '],
     autoStart: true,
     loop: true,
   }}

@@ -136,15 +136,15 @@ export default function LogPage() {
 
 <Grid container spacing={2}>
   <Grid item xs={14}>
-      <Typography sx={{mb:2}} variant="h4">My Ramadan Journal</Typography>
+      <Typography sx={{mb:2}} variant="h4"><strong>My Ramadan Log</strong></Typography>
       <Typography variant="h6"> <strong> My Goal: </strong> {habit.habit}</Typography>
       <Typography variant="h6"> <strong>My intention:</strong> {habit.intention}</Typography>
       
       
   </Grid>
   <Grid sx={{ mt:5 }} item xs={8}>
-  <Button endIcon={<HistoryEduIcon/>} variant="outlined" color="success" onClick={handleClickOpen}>
-            Create a new Journal Entry
+  <Button endIcon={<HistoryEduIcon/>} variant="contained" color="success" onClick={handleClickOpen}>
+            Create a new Log Entry
         </Button>
   </Grid>
 
@@ -152,12 +152,13 @@ export default function LogPage() {
   {notes.map(note => (
       <Accordion key={note.id} sx={{maxWidth: 700, width: '100%',  }}>
 
-        <AccordionSummary
+        <AccordionSummary sx={{backgroundColor:'F3F3F3'}}
+        
           expandIcon={<ExpandMoreIcon />}
           
           
         >
-          <Typography variant="h6" sx={{}}>Journal Entry from {note.date} </Typography>
+          <Typography variant="body" >Log Entry from {note.date} </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -183,7 +184,7 @@ export default function LogPage() {
 
 
 <Dialog sx={{zIndex: 100000000000000}} open={open} onClose={handleClose}>
-              <DialogTitle>Add a New Journal Entry</DialogTitle>
+              <DialogTitle>Add a New Log Entry ✍️ </DialogTitle>
               <DialogContent>
                 <DialogContentText>
                   Track your progress this Ramadan towards your defined goal.
