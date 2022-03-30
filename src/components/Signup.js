@@ -101,7 +101,7 @@ export default function Signup() {
     <Typography sx={{ m: 5}}  variant="h5">
 <Typewriter
   options={{
-    strings: ['Ramadan Mubarak! 🎉', 'Keep me in your Duas 🤲' ],   
+    strings: ['As Salaamu Alaykum 🤲', 'Ramadan Mubarak! 🎉'],   
     autoStart: true,
     loop: true,
   }}
