@@ -38,11 +38,11 @@ ReactDOM.render(
 
   <AuthProvider>
   <React.StrictMode>
-    <BrowserRouter basename="/ramadanlog">
+    <BrowserRouter>
       <App/>
     </BrowserRouter>
   </React.StrictMode>
   </AuthProvider>,
-   document.getElementById("root")
+  rootElement
   
 );
