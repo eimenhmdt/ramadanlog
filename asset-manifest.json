@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/ramadanlog/static/css/main.9e06cd67.css",
-    "main.js": "/ramadanlog/static/js/main.ec59c0d2.js",
+    "main.css": "/ramadanlog/static/css/main.5b805916.css",
+    "main.js": "/ramadanlog/static/js/main.1ca06c7e.js",
+    "static/media/background.png": "/ramadanlog/static/media/background.31e6a90bc63d973a6b8e.png",
     "index.html": "/ramadanlog/index.html",
-    "main.9e06cd67.css.map": "/ramadanlog/static/css/main.9e06cd67.css.map",
-    "main.ec59c0d2.js.map": "/ramadanlog/static/js/main.ec59c0d2.js.map"
+    "main.5b805916.css.map": "/ramadanlog/static/css/main.5b805916.css.map",
+    "main.1ca06c7e.js.map": "/ramadanlog/static/js/main.1ca06c7e.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e06cd67.css",
-    "static/js/main.ec59c0d2.js"
+    "static/css/main.5b805916.css",
+    "static/js/main.1ca06c7e.js"
   ]
 }
