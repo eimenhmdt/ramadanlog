@@ -43,6 +43,6 @@ ReactDOM.render(
     </BrowserRouter>
   </React.StrictMode>
   </AuthProvider>,
-  rootElement
+   document.getElementById("root")
   
 );
