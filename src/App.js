@@ -47,15 +47,17 @@ function Appy() {
     
 
     <QueryClientProvider client={queryClient}>
+
+      <BrowserRouter basename="/ramadanlog" >
       <ToastContainer />
       <AuthProvider>
       <Routes>
       
-        <Route path='/login' element={<Login/>} />
-        <Route path="/signup" element={<Signup/>} />  
+        <Route exact path='/login' element={<Login/>} />
+        <Route exact path="/signup" element={<Signup/>} />  
         <Route element={<ProtectedRoute currentUser={currentUser}/>}>
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path=":habitId" element={<Log/>} />
+          <Route exact path="/dashboard" element={<Dashboard />} />
+          <Route exact path=":habitId" element={<Log/>} />
         </Route>
        
         
@@ -73,6 +75,7 @@ function Appy() {
           
       </Routes>
       </AuthProvider> 
+      </BrowserRouter>
   </QueryClientProvider>
   
 )}
