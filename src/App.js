@@ -48,7 +48,7 @@ function Appy() {
 
     <QueryClientProvider client={queryClient}>
 
-      <BrowserRouter basename="/ramadanlog" >
+      
       <ToastContainer />
       <AuthProvider>
       <Routes>
@@ -75,7 +75,6 @@ function Appy() {
           
       </Routes>
       </AuthProvider> 
-      </BrowserRouter>
   </QueryClientProvider>
   
 )}
